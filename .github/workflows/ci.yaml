@@ -70,7 +70,7 @@ jobs:
           java-version: '17'
           cache: maven
       - name: Build with maven
-        run: mvn clean install
+        run: mvn clean package
 
   docker-push:
     runs-on: ubuntu-latest

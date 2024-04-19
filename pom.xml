@@ -54,6 +54,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>springboot-message-topic</finalName>
 	</build>
 	<repositories>
 		<repository>

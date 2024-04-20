@@ -1,4 +1,4 @@
 FROM openjdk:17
 EXPOSE 8084
-ADD target/springboot-message-topic.jar springboot-message-topic.jar
-ENTRYPOINT ["java","-jar","/springboot-message-topic.jar"]
+ADD target/clickstream-application.jar clickstream-application.jar
+ENTRYPOINT ["java","-jar","/clickstream-application.jar"]

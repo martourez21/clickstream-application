@@ -1,4 +1,4 @@
-package com.nestorworks.clickstreamapplication.service;
+package com.nestorworks.clickstreamapplication;
 
 import com.nestorworks.clickstreamapplication.record.Message;
 import lombok.extern.slf4j.Slf4j;

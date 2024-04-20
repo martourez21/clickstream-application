@@ -1,6 +1,6 @@
 package com.nestorworks.clickstreamapplication.controller;
 
-import com.nestorworks.clickstreamapplication.service.ClickStreamService;
+import com.nestorworks.clickstreamapplication.ClickStreamService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

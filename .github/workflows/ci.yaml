@@ -71,6 +71,9 @@ jobs:
           cache: maven
       - name: Build with maven
         run: mvn clean install
+      - name: Print JAR path
+        run: |
+          echo "JAR file path: $(find target -name *.jar)"
 
   docker-push:
     runs-on: ubuntu-latest

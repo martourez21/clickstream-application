@@ -70,7 +70,7 @@ jobs:
           java-version: '17'
           cache: maven
       - name: Build with maven
-        run: mvn clean package
+        run: mvn clean install
 
   docker-push:
     runs-on: ubuntu-latest
@@ -87,7 +87,7 @@ jobs:
       - name: Build & push Docker image
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          image: developmentacc/springboot-message-topic
+          image: developmentacc/clickstream-application
           tags: latest
           registry: docker.io
           dockerfile: Dockerfile

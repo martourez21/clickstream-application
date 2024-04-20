@@ -59,8 +59,7 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-#clear
-    needs: unit-test
+#    needs: unit-test
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -74,7 +73,7 @@ jobs:
         run: mvn clean package
 
   docker-push:
-#    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Checkout code
